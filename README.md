@@ -1,26 +1,25 @@
 # SkillSell
 
-SkillSell is a modern platform connecting skilled professionals with clients seeking their services. Built with Next.js, TypeScript, Tailwind CSS, and Prisma/PostgreSQL, it provides a seamless experience for both service providers and clients.
+SkillSell is a modern platform for uploading, selling, and buying online courses. Built with Next.js, TypeScript, Tailwind CSS, and Prisma/PostgreSQL, it provides a seamless experience for both course creators and learners.
 
 ## 🚀 Features
 
 - User Authentication (Sign In/Sign Up)
-- Skill Marketplace: Browse and discover professional services
-- Profile Management for service providers
-- Advanced Search & Filter
-- Booking System for appointments
-- Ratings & Reviews
-- Secure Payment Integration (Stripe)
-- Real-time Chat
-- Personalized Dashboards
-- File Uploads (Uploadthing)
-- Analytics for teachers
+- Upload and manage courses with chapters and attachments
+- Purchase courses securely via Stripe
+- Student dashboard: track progress, view enrolled courses
+- Teacher dashboard: analytics, manage uploaded courses
+- Advanced search & filter for courses
+- Ratings & Reviews for courses
+- File uploads (Uploadthing)
+- Secure payment integration (Stripe)
+- Personalized dashboards for students and teachers
 
 ## 🛠️ Tech Stack
 
 - **Frontend:** Next.js, React, TypeScript, Tailwind CSS
 - **Backend:** Node.js, Prisma ORM, PostgreSQL
-- **Authentication:** JWT, NextAuth
+- **Authentication:** Clerk, NextAuth
 - **Payments:** Stripe
 - **File Uploads:** Uploadthing
 - **Deployment:** Vercel
@@ -136,9 +135,9 @@ npm start
 
 ## 📝 API Endpoints
 
-- `/api/courses` - Course management
-- `/api/chapters` - Chapter management
-- `/api/dashboard` - Dashboard data
+- `/api/courses` - Upload, list, and purchase courses
+- `/api/chapters` - Manage course chapters
+- `/api/dashboard` - Dashboard data for students/teachers
 - `/api/uploadthing` - File uploads
 - `/api/webhook` - Stripe webhooks
 
